@@ -23,14 +23,15 @@
     npm run dev    -->
 
   <body>
-    <p class="bg-black bg-opacity-90 pt-3 text-center text-xs text-yellow-50">
-      Fotobogen du har ventet på. Bogen der vil forandre din foto oplevelse, den
-      der vil gøre dig til en bedre og mere kompetent fotograf. Bogen du ikke
-      vil undvære længere.
+    <p
+      class="bg-black bg-opacity-90 pt-3 text-center text-xs text-yellow-50 lg:text-lg"
+    >
+      Fotobogen du har ventet på. Den der vil forandre din foto oplevelse. Bogen
+      du ikke vil undvære længere.
     </p>
 
     <!-- HERO SEKTIONEN - START -->
-    <section class="bg-black bg-opacity-90 lg:flex lg:gap-40 lg:pb-32">
+    <section class="bg-black bg-opacity-90 pb-10 lg:flex lg:gap-40 lg:pb-32">
       <div>
         <img
           class="px-12 py-3 lg:mt-28 lg:ml-20 lg:h-3/4 lg:p-0"
@@ -46,14 +47,14 @@
           </h1>
           <p class="font-bold">af Sten Simons</p>
         </div>
-        <div class="mt-2 flex">
+        <div class="mt-4 flex justify-center gap-4 lg:justify-start">
           <button
-            class="rounded-lg bg-yellow-500 px-6 py-2 align-middle text-xl font-black lg:mt-16 lg:px-10 lg:py-3"
+            class="text-s rounded-lg bg-yellow-500 px-6 align-middle font-black lg:mt-16 lg:px-10 lg:py-3 lg:text-2xl"
           >
             KØB BOGEN
           </button>
           <button
-            class="text-s rounded-lg bg-yellow-500 px-6 py-2 align-middle font-black tracking-wide opacity-70 lg:mt-16 lg:ml-10 lg:px-10 lg:py-3"
+            class="rounded-lg bg-yellow-500 px-6 py-2 align-middle text-xs font-black tracking-wide opacity-70 lg:mt-16 lg:ml-10 lg:px-10 lg:py-3 lg:text-xl"
           >
             Download kapt. 1 - GRATIS
           </button>
@@ -62,7 +63,7 @@
     </section>
     <!-- HERO SEKTIONEN - SLUT -->
 
-    <section class="lg:mx-32">
+    <section class="mx-4 lg:mx-32">
       <section class="my-20 grid-cols-2 gap-40 lg:grid">
         <div>
           <h2 class="mb-4 text-5xl underline decoration-wavy">Kort om bogen</h2>
@@ -75,26 +76,29 @@
           </p>
         </div>
 
-        <div class="flex items-end">
+        <div class="mt-8 flex items-end">
           <ul
-            class="list-none rounded-lg border-4 p-14 text-center text-xs italic shadow-lg"
+            class="list-none rounded-lg border-4 p-12 text-center text-xs italic shadow-lg"
           >
-            <li>Titel: Københavnerbilleder - en guide til hipster foto</li>
-            <li>Forfatter: Sten Simons</li>
-            <li>Antal sider: 344</li>
-            <li>Forlag: Mellem Linjerne</li>
-            <li>ISBN: 987-6-987654-32-1</li>
-            <li>Pris: 399.-</li>
+            <li>
+              <strong> Titel: </strong> Københavnerbilleder - en guide til
+              hipster foto
+            </li>
+            <li><strong> Forfatter: </strong>Sten Simons</li>
+            <li><strong> Antal sider:</strong> 344</li>
+            <li><strong> Forlag: </strong>Mellem Linjerne</li>
+            <li><strong> ISBN:</strong> 987-6-987654-32-1</li>
+            <li><strong> Pris:</strong> 399.-</li>
           </ul>
         </div>
       </section>
 
-      <section class="grid grid-cols-3 items-center gap-10">
-        <img class="h-64" src="/bog_v.webp" alt="" />
+      <section class="mx-4 items-center justify-center gap-8 lg:flex">
+        <img class="mb-3 lg:h-64" src="/bog_v.webp" alt="" />
 
-        <img class="h-56" src="/bog_op.webp" alt="" />
+        <img class="mb-3 lg:h-56" src="/bog_op.webp" alt="" />
 
-        <img class="h-52 rounded-3xl" src="/om_bog.webp" alt="" />
+        <img class="lg:h-52" src="/om_bog.webp" alt="" />
       </section>
 
       <section class="my-20 gap-10">
@@ -234,7 +238,7 @@
               </svg>
             </div>
 
-            <div>
+            <div class="mb-6">
               Københavnerbilleder er en grundig introduktion til at skyde
               billeder med retro-kant. Hvad enten du er har arbejdet med foto
               siden 135-filmen kom på markedet, du kun har skudt digitalt eller
@@ -280,7 +284,7 @@
                 />
               </svg>
             </div>
-            <div>
+            <div class="mb-6">
               Teksten er underholdende, og billederne er sku’ flotte. Hvad mere
               skal man sige om en fotobog?
               <br />
@@ -337,24 +341,29 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="bg-black p-10 text-center">
         <h2
-          class="bg-black p-12 text-center text-4xl tracking-wider text-yellow-50 opacity-90"
+          class="mb-4 text-center text-xl tracking-wider text-yellow-50 opacity-90 lg:text-4xl"
         >
           Køb bogen for 399,00 kr i dag
         </h2>
+        <button
+          class="text-s rounded-lg bg-yellow-500 px-6 py-2 font-black lg:px-10 lg:py-3 lg:text-2xl"
+        >
+          KØB BOGEN
+        </button>
       </section>
 
-      <section class="my-20 grid grid-cols-3 grid-rows-3 gap-5">
-        <img src="/1.webp" alt="" width="300" height="300" />
-        <img src="/2.webp" alt="" width="300" height="300" />
-        <img src="/3.webp" alt="" width="300" height="300" />
-        <img src="/4.webp" alt="" width="300" height="300" />
-        <img src="/5.webp" alt="" width="300" height="300" />
-        <img src="/6.webp" alt="" width="300" height="300" />
-        <img src="/7.webp" alt="" width="300" height="300" />
-        <img src="/8.webp" alt="" width="300" height="300" />
-        <img src="/9.webp" alt="" width="300" height="300" />
+      <section class="my-20 grid-cols-3 lg:grid">
+        <img class="aspect-square object-cover" src="/1.webp" alt="" />
+        <img class="aspect-square object-cover" src="/2.webp" alt="" />
+        <img class="aspect-square object-cover" src="/3.webp" alt="" />
+        <img class="aspect-square object-cover" src="/4.webp" alt="" />
+        <img class="aspect-square object-cover" src="/5.webp" alt="" />
+        <img class="aspect-square object-cover" src="/6.webp" alt="" />
+        <img class="aspect-square object-cover" src="/7.webp" alt="" />
+        <img class="aspect-square object-cover" src="/8.webp" alt="" />
+        <img class="aspect-square object-cover" src="/9.webp" alt="" />
       </section>
 
       <section class="my-32 grid-cols-2 gap-40 lg:grid">
